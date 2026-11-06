@@ -1,0 +1,7 @@
+data/
+runs/
+__pycache__/
+*.pt
+*.pyc
+.venv/
+curves.png
