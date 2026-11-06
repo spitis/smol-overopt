@@ -1,5 +1,7 @@
 # smol-overopt
 
+Inspired by Harry Liuson's [ultraviolet](https://github.com/hliuson/ultraviolet).
+
 A small testbed for reward-model overoptimization in the style of Gao, Schulman and Hilton (2022), "Scaling Laws for Reward Model Overoptimization". A SmolLM2-135M-Instruct policy is trained with GRPO against a learned reward model (SmolLM2-360M with a scalar head) that was fitted to the scores of an LLM quality judge. A held-out set of 300 HelpSteer2 prompts is generated and judged every 25 steps. The judge plays the role of the gold reward, the learned model is the proxy.
 
 ## What it is for
